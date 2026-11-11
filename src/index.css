@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: "Playfair Display", Georgia, serif;
+    --font-body: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-stat: "Oswald", sans-serif;
+    --color-gold: #F5B800;
+    --color-black: #111111;
+    --color-white: #FFFFFF;
+    --color-cream: #FFF9E9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #111111;
+    background-color: #111111;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-playfair {
+    font-family: var(--font-heading);
+  }
+
+  .font-poppins {
+    font-family: var(--font-body);
+  }
+
+  .font-stat {
+    font-family: var(--font-stat);
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Custom Typography & Utility Styles as per brand guidelines */
+.text-hero-heading {
+  font-family: var(--font-heading);
+  font-size: 64px;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .text-hero-heading {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+}
+
+.text-section-heading {
+  font-family: var(--font-heading);
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .text-section-heading {
+    font-size: 32px;
+  }
+}
+
+.text-subheading {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.text-card-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.text-body-custom {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.text-small-custom {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.text-nav-custom {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.btn-custom {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5B800;
+}
+
+/* Gentle Floating Animation */
+@keyframes floatKarahi {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float-karahi {
+  animation: floatKarahi 3.5s ease-in-out infinite;
+}
+
+@layer base {
+  :root {
+    --font-heading: "Playfair Display", Georgia, serif;
+    --font-body: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-stat: "Oswald", sans-serif;
+    --color-gold: #F5B800;
+    --color-black: #111111;
+    --color-white: #FFFFFF;
+    --color-cream: #FFF9E9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #111111;
+    background-color: #111111;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-playfair {
+    font-family: var(--font-heading);
+  }
+
+  .font-poppins {
+    font-family: var(--font-body);
+  }
+
+  .font-stat {
+    font-family: var(--font-stat);
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Custom Typography & Utility Styles as per brand guidelines */
+.text-hero-heading {
+  font-family: var(--font-heading);
+  font-size: 64px;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .text-hero-heading {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+}
+
+.text-section-heading {
+  font-family: var(--font-heading);
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .text-section-heading {
+    font-size: 32px;
+  }
+}
+
+.text-subheading {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.text-card-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.text-body-custom {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.text-small-custom {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.text-nav-custom {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.btn-custom {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5B800;
+}
+
+/* Gentle Floating Animation */
+@keyframes floatKarahi {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float-karahi {
+  animation: floatKarahi 3.5s ease-in-out infinite;
+}
